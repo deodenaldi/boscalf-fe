@@ -7,7 +7,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="breadcrumb-text product-more">
-                            <a href="./home.html"><i class="fa fa-home"></i> Home</a>
+                            <router-link to="/"><i class="fa fa-home"></i> Home </router-link>
                             <span>Detail</span>
                         </div>
                     </div>
@@ -89,6 +89,8 @@
             </div>
         </section>
         <!-- Product Shop Section End -->
+
+        <RelatedProduct />
         <FooterBoscalf />
     </div>
 </template>
@@ -97,6 +99,7 @@
 // @ is an alias to /src
 import carousel from 'vue-owl-carousel'
 import HeaderBoscalf from '@/components/HeaderBoscalf.vue'
+import RelatedProduct from '@/components/RelatedProduct.vue'
 import FooterBoscalf from '@/components/FooterBoscalf.vue'
 
 export default {
@@ -104,6 +107,7 @@ export default {
     components: {
         carousel,
         HeaderBoscalf,
+        RelatedProduct,
         FooterBoscalf,
     },
     data() {

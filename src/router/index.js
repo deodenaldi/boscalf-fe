@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ProdukView from "../views/ProdukView.vue";
+import ShoppingCartView from "../views/ShoppingCartView.vue";
 
 Vue.use(VueRouter);
 
@@ -24,6 +25,11 @@ const routes = [
     path: "/produk",
     name: "produk",
     component: ProdukView,
+  },
+  {
+    path: "/shopping",
+    name: "shopping",
+    component: ShoppingCartView,
   },
 ];
 
